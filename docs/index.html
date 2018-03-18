@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>FURIGOMA | 将棋の振り駒ができるWEBアプリ</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta property="og:title" content="FURIGOMA | 将棋の振り駒ができるWEBアプリ">
+        <meta property="og:url" content="https://ko31.github.io/furigoma">
+        <meta property="og:description" content="将棋の振り駒ができるWEBアプリです。">
+        <meta property="og:image" content="https://ko31.github.io/furigoma/img/ogp.png">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="FURIGOMA | 将棋の振り駒ができるWEBアプリ">
+        <meta name="twitter:site" content="@kifulog">
+        <meta name="twitter:description" content="将棋の振り駒ができるWEBアプリです。">
+        <meta name="twitter:image" content="https://ko31.github.io/furigoma/img/twitter.png">
+
+        <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="img/favicon.ico" >
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/cover.css" rel="stylesheet">
+    </head>
+
+    <body class="text-center">
+
+        <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+            <header class="masthead mb-auto">
+            <div class="inner">
+                <h3 class="masthead-brand">FURIGOMA</h3>
+            </div>
+            </header>
+
+            <main role="main" class="inner cover">
+            <h1 class="cover-heading">Let's shake!</h1>
+            <div id="furigoma">
+                <p class="board">
+                <img class="el koma" src="img/fu.png">
+                <img class="el koma" src="img/fu.png">
+                <img class="el koma" src="img/fu.png">
+                <img class="el koma" src="img/fu.png">
+                <img class="el koma" src="img/fu.png">
+                </p>
+                <p class="lead">
+                <a href="#" class="btn btn-lg btn-secondary play">shake!</a>
+                </p>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input bg-img" type="radio" name="bg-img" id="bg_dark" value="dark" checked="checked">
+                    <label class="form-check-label" for="bg_dark">Dark</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input bg-img" type="radio" name="bg-img" id="bg_tatami" value="tatami">
+                    <label class="form-check-label" for="bg_tatami">Tatami</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input bg-img" type="radio" name="bg-img" id="bg_ban" value="ban">
+                    <label class="form-check-label" for="bg_ban">Ban</label>
+                </div>
+            </div>
+            </main>
+
+            <footer class="mastfoot mt-auto">
+            <div class="inner">
+                <p>by <a href="https://kifulog.ko31.com/" target="_blank">きふろぐ</a></p>
+            </div>
+            </footer>
+        </div>
+
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/anime.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

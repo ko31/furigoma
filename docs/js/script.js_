@@ -1,0 +1,31 @@
+window.onload = function(){
+    var img = [ 'img/fu.png', 'img/to.png' ];
+    var furigoma = anime({
+        targets: '#furigoma .el',
+        translateY: 0,
+        delay: function(el, i, l) {
+            return i * (anime.random(50, 100));
+        },
+        direction: 'alternate',
+        rotate: '5turn',
+        loop: false,
+        autoplay: false,
+        begin: function(anim) {
+            shake();
+            console.log("begin");
+        },
+        complete: function(anim) {
+            console.log("complete");
+        }
+    });
+
+    function shake() {
+        var koma = document.getElementsByClassName('koma');
+        for (var i=0; i<koma.length; i++) {
+            koma[i].src = img[anime.random(0, 1)];
+        }
+    }
+
+    document.querySelector('#furigoma .play').onclick = furigoma.restart;
+    document.querySelector('.bg-img').change = alert('change');
+}
