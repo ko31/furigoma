@@ -28,8 +28,8 @@ $(function(){
     $('.bg-img').click(function(){
         if ($(this).val() == 'tatami') {
             $('body').css('background-image', 'url(img/tatami.jpg)');
-        } else if ($(this).val() == 'ban') {
-            $('body').css('background-image', 'url(img/shogiban.png)');
+        } else if ($(this).val() == 'wood') {
+            $('body').css('background-image', 'url(img/wood.png)');
         } else {
             $('body').css('background-image', 'none');
         }
